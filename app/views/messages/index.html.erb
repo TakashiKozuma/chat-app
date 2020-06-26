@@ -1,2 +1,13 @@
-<h1>Messages#index</h1>
-<p>Find me in app/views/messages/index.html.erb</p>
+<div class="wrapper">
+  <div class = "side-bar">
+    <%= render "side_bar" %>
+    <div class="user-name"></div>
+    <div class="chat-list"></div>
+  </div>
+  <div class="chat">
+    <%= render "main_chat" %>
+    <div class="chat-name"></div>
+    <div class="chat-messages"></div>
+    <div class="chat-form"></div>
+  </div>
+</div>
