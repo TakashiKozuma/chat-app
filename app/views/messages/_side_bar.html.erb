@@ -1,1 +1,19 @@
-
+<div class="user-name">
+      <div class="name">
+        <%= link_to edit_user_path(current_user) do %>
+      <%= current_user.name %>
+    <% end %>
+      </div>
+      <div class="create-chat">
+        <a href="#">チャットを作成する</a>
+      </div>
+    </div>
+    <div class="chat-list">
+      <div class="room-name">
+        <a href="#" class="room-link">chatroom1</a>
+      </div>
+      <div class="room-name">
+        <a href="#" class="room-link">chatroom2</a>
+      </div>
+    </div>
+  </div>
