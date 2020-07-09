@@ -122,7 +122,6 @@
 .text-form {
   width: 100%;
   display: flex;
-  background-color: white;
 }
 
 .text-input {
@@ -130,6 +129,8 @@
   width: 100%;
   padding-left: 10px;
   border: none;
+  display: flex;
+  background-color: white;
 }
 
 .form-button {

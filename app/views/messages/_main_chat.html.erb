@@ -20,13 +20,17 @@
       </div>
     </div>
     <div class="chat-form">
-      <div class="text-form">
-        <input class="text-input" placeholder="type a message">
+      <%# <div class="text-form"> %>
+      <%= form_with model: [@room, @message], html: {class: "text-form"}, local: true do |f| %>
+        <div class="text-input" >
+        <%= f.text_field :content, class: 'text-input', placeholder: "type a message" %>
         <label class="form-image">
           <span class="image-file">画像</span>
-          <input class="hidden" type="file">
-      </div>
+          <%= f.file_field :image, class: 'hidden' %>
+          <%# <input class="hidden" type="file"> %>
+        </div>
       <%# <div class="image-form"></div> %>
-      <input class="form-button" type="submit" value="送信">
-      </div>
+      <%# <input class="form-button" type="submit" value="送信"> %>
+      <%= f.submit '送信', class: 'form-button' %>
+      <% end %>
     </div>
